@@ -94,3 +94,7 @@ krnode install express
 ## 📄 라이선스 (License)
 
 이 프로젝트는 MIT License 를 따릅니다.
+
+
+## <a href="https://vscode.dev"><img src="https://code.visualstudio.com/favicon.ico" width=23></a>    VSCode 확장
+https://github.com/asanaliopensource/krjs-vscode - the repostiory
