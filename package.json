@@ -1,0 +1,33 @@
+{
+  "name": "krjs",
+  "version": "1.0.0",
+  "description": "자바스크립트 (Korean JS) - Production-grade Korean dialect language compiler and runtime for JavaScript",
+  "main": "kernel.js",
+  "bin": {
+    "krnode": "./cli/cli.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "start": "node cli/cli.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.24.0",
+    "@babel/parser": "^7.24.0",
+    "@babel/traverse": "^7.24.0",
+    "@babel/types": "^7.24.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0"
+  },
+  "keywords": [
+    "korean",
+    "javascript",
+    "krjs",
+    "compiler",
+    "transpiler",
+    "babel",
+    "ast"
+  ],
+  "author": "asanaliopensource",
+  "license": "Apache-2.0"
+}
