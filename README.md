@@ -2,7 +2,7 @@
 
 > Babel AST 기반의 강력한 한국어 자바스크립트(Korean JS) 다이얼렉트 컴파일러 및 런타임입니다.
 
-[![npm version](https://img.shields.io/npm/v/krjs?style=flat-square&color=purple)](https://www.npmjs.com/package/krjs)
+[![npm version](https://img.shields.io/npm/v/krjs?style=flat-square&color=purple)](https://www.npmjs.com/package/@asanalidev/krjs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 ## 🚀 소개 (About)
