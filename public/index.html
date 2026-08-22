@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRJS — 자바스크립트</title>
+    <link rel="icon" type="image/png" href="krjs.ico">
+    <link rel="stylesheet" href="public.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="krjs.ico" alt="KRJS Logo">
+            <div class="logo-text">KRJS</div>
+        </div>
+        <div class="nav-controls">
+            <nav class="nav-links">
+                <a href="#about" id="nav-about">소개</a>
+                <a href="#install" id="nav-install">설치</a>
+                <a href="#code" id="nav-code">코드</a>
+                <a href="#vscode" id="nav-vscode">VS Code</a>
+            </nav>
+            <select class="lang-switcher" id="langSelect" onchange="changeLanguage(this.value)">
+                <option value="kr">한국어</option>
+                <option value="rus">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <h1 id="hero-title">자바스크립트의 직관적인 확장,<br>KRJS 런타임.</h1>
+            <p id="hero-desc">Babel AST 기반으로 동작하며, 자연스러운 한국어 키워드로 코딩할 수 있는 모던 프로그래밍 언어 다이알렉트입니다.</p>
+            <div class="cta-buttons">
+                <a href="https://www.npmjs.com/package/@asanalidev/krjs" target="_blank" class="btn btn-primary" id="btn-npm">
+                    npm에서 설치
+                </a>
+                <a href="https://github.com/asanaliopensource/krjs-vscode" target="_blank" class="btn btn-secondary" id="btn-gh">
+                    GitHub 레포지토리
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT & INSTALL -->
+        <div class="grid-2" id="about">
+            <div class="card">
+                <h3 id="c1-title">아키텍처 개요</h3>
+                <p id="c1-desc">단순 치환 방식이 아닌, 완전한 Babel AST(Abstract Syntax Tree) 파싱을 거쳐 안전하고 효율적인 순수 자바스크립트로 변환됩니다.</p>
+                <ul>
+                    <li id="c1-li1">안정적인 동기/비동기 흐름 제어</li>
+                    <li id="c1-li2">전역 CLI 툴셋 <code>krnode</code> 탑재</li>
+                </ul>
+            </div>
+            <div class="card" id="install">
+                <h3 id="c2-title">패키지 설치</h3>
+                <p id="c2-desc">Node.js 환경에서 글로벌 패키지를 설치하여 즉시 사용하실 수 있습니다.</p>
+                <pre><code>npm install -g @asanalidev/krjs</code></pre>
+            </div>
+        </div>
+
+        <!-- CODE EXAMPLE -->
+        <section class="section-block" id="code">
+            <h2 class="section-title" id="sec-code-title">소스 코드 예시 (main.krjs)</h2>
+            <div class="card">
+                <p id="sec-code-desc">직관적인 한국어 키워드(<code>상수</code>, <code>함수</code>, <code>로그</code> 등)를 활용한 클린 코드 구조입니다.</p>
+                <pre><code>// main.krjs
+상수 메시지 = "안녕하세요, KRJS!";
+
+함수 출력(대상) {
+    로그(대상 + " — 정상 작동 중입니다.");
+}
+
+출력(메시지);</code></pre>
+            </div>
+        </section>
+
+        <!-- VS CODE EXTENSION -->
+        <section class="section-block" id="vscode">
+            <h2 class="section-title" id="sec-vs-title">VS Code 확장 프로그램</h2>
+            <div class="card">
+                <h3 id="vs-card-title">asanaliopensource/krjs-vscode</h3>
+                <p id="vs-card-desc">에디터 상단 패널의 <strong>Run</strong> 버튼 하나로 파일을 즉시 실행하고, 정교한 문법 강조(Syntax Highlighting)를 지원합니다.</p>
+                <ul>
+                    <li id="vs-li1"><code>.krjs</code> 파일 실시간 연동</li>
+                    <li id="vs-li2">오픈소스 코드: <a href="https://github.com/asanaliopensource/krjs-vscode" target="_blank" style="color: inherit; text-decoration: underline;">GitHub 링크</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-text">&copy; 2026 KRJS Project. Open Source Software.</p>
+    </footer>
+
+    <script src="public.min.js"></script>
+</body>
+</html>
