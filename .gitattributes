@@ -1,3 +1,4 @@
 *.md linguist-detectable
 *.js linguist-detectable=true
 *.json linguist-detectable
+*.css linguist-detectable
